@@ -6,7 +6,7 @@ package untar.fti.strukturdata;
  *
  * @param <T>
  */
-public class LList<T> implements ListInterface<T> {
+public class LList<T> implements ListInterface<T>, java.io.Serializable {
 	
 	private Node	firstNode; // head reference to first node
 	private Node	lastNode;  // tail reference to last node
