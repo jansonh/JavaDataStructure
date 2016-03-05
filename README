@@ -7,3 +7,7 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
    - AList.java
    - AListExpandable.java
    - LList.java
+2. Stack
+   - StackInterface.java
+   - ArrayStack.java
+   - LinkedStack.java
