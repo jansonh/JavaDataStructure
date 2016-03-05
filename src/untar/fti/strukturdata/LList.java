@@ -13,7 +13,7 @@ public class LList<T> implements ListInterface<T>, java.io.Serializable {
 	private int		length;	   // number of entries in list
 	
 	// inner class
-	private class Node {
+	private class Node implements java.io.Serializable {
 		private T		data; // entry in list
 		private Node	next; // link to next node
 		
