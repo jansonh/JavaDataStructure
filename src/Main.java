@@ -5,6 +5,9 @@ public class Main {
 		testAList();
 		testAListExpandable();
 		testLList();
+		
+		testLinkedStack();
+		testArrayStack();
 	}
 
 	public static void testAList() {
@@ -57,5 +60,51 @@ public class Main {
 
 		System.out.println("Testing display()");
 		myList.display();
+	}
+	
+	public static void testLinkedStack() {
+		System.out.println("Testing LinkedStack");
+		
+		StackInterface<String> myStack = new LinkedStack<String>();
+		myStack.push("Jim");
+		myStack.push("Jess");
+		myStack.push("Jill");
+		myStack.push("Jane");
+		myStack.push("Joe");
+		
+		String top = myStack.peek(); // Joe
+		System.out.println(top + " is at the top of the stack.");
+		
+		top = myStack.pop(); // Joe
+		System.out.println(top + "is removed from the stack.");
+		
+		top = myStack.peek(); // Jane
+		System.out.println(top + " is at the top of the stack.");
+		
+		top = myStack.pop(); // Jane
+		System.out.println(top + " is removed from the stack.");
+	}
+	
+	public static void testArrayStack() {
+		System.out.println("Testing ArrayStack");
+		
+		StackInterface<String> myStack = new ArrayStack<String>();
+		myStack.push("Jim");
+		myStack.push("Jess");
+		myStack.push("Jill");
+		myStack.push("Jane");
+		myStack.push("Joe");
+		
+		String top = myStack.peek(); // Joe
+		System.out.println(top + " is at the top of the stack.");
+		
+		top = myStack.pop(); // Joe
+		System.out.println(top + "is removed from the stack.");
+		
+		top = myStack.peek(); // Jane
+		System.out.println(top + " is at the top of the stack.");
+		
+		top = myStack.pop(); // Jane
+		System.out.println(top + " is removed from the stack.");
 	}
 }
