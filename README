@@ -11,3 +11,11 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
    - StackInterface.java
    - ArrayStack.java
    - LinkedStack.java
+3. Queue
+   - QueueInterface.java
+   - ArrayQueue.java
+   - LinkedQueue.java
+   - TwoPartCircularLinkedQueue.java
+   - DequeInterface.java
+   - LinkedDeque.java
+   - PriorityQueueInterface.java
