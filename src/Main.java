@@ -8,6 +8,9 @@ public class Main {
 		
 		testLinkedStack();
 		testArrayStack();
+		
+		testLinkedQueue();
+		testArrayQueue();
 	}
 
 	public static void testAList() {
@@ -107,4 +110,34 @@ public class Main {
 		top = myStack.pop(); // Jane
 		System.out.println(top + " is removed from the stack.");
 	}
+	
+	public static void testLinkedQueue() {
+	   QueueInterface<String> queue = new LinkedQueue<String>();
+	   queue.enqueue("Jim");
+	   queue.enqueue("Jess");
+	   queue.enqueue("Jill");
+	   queue.enqueue("Jane");
+	   queue.enqueue("Joe");
+	   
+	   String front = queue.getFront(); // Jim
+	   System.out.println(front + " is at the front of the queue.");
+	   
+	   front = queue.dequeue(); // Jim
+	   System.out.println(front + " is removed from the queue");
+   }
+   
+   public static void testArrayQueue() {
+	   QueueInterface<String> queue = new ArrayQueue<String>();
+	   queue.enqueue("Jim");
+	   queue.enqueue("Jess");
+	   queue.enqueue("Jill");
+	   queue.enqueue("Jane");
+	   queue.enqueue("Joe");
+	   
+	   String front = queue.getFront(); // Jim
+	   System.out.println(front + " is at the front of the queue.");
+	   
+	   front = queue.dequeue(); // Jim
+	   System.out.println(front + " is removed from the queue");
+   }
 }
