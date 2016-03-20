@@ -19,3 +19,6 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
    - DequeInterface.java
    - LinkedDeque.java
    - PriorityQueueInterface.java
+4. Dictionary
+   - DictionaryInterface.java
+   - HashedDictionary.java
