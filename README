@@ -35,3 +35,5 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
 7. Heap
    - MaxHeapInterface.java
    - MaxHeap.java
+8. AVL Tree
+   - AVLTree.java
