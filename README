@@ -22,3 +22,13 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
 4. Dictionary
    - DictionaryInterface.java
    - HashedDictionary.java
+5. Binary Tree
+   - BinaryNodeInterface.java
+   - BinaryNode.java
+   - TreeInterface.java
+   - TreeIteratorInterface.java
+   - BinaryTreeInterface.java
+   - BinaryTree.java
+6. Binary Search Tree
+   - SearchTreeInterface.java
+   - BinarySearchTree.java
