@@ -32,3 +32,6 @@ See src/untar/fti/strukturdata/*.java for Java implementations. Compile and run 
 6. Binary Search Tree
    - SearchTreeInterface.java
    - BinarySearchTree.java
+7. Heap
+   - MaxHeapInterface.java
+   - MaxHeap.java

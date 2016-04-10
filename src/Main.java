@@ -16,6 +16,8 @@ public class Main {
 		
 		testBinaryTree();
 		testBinarySearchTree();
+		
+		testMaxHeap();
 	}
 
 	public static void testAList() {
@@ -198,5 +200,22 @@ public class Main {
 		myTree.add(2);
 		
 		System.out.println("Searching for 10 in the BST returns " + myTree.contains(10));
+	}
+	
+	public static void testMaxHeap() {
+		System.out.println("\n== Testing MaxHeap");
+		MaxHeapInterface<String> heap = new MaxHeap<String>();
+		
+		heap.add("John");
+		heap.add("Susan");
+		heap.add("Alice");
+		heap.add("Bob");
+		
+		System.out.print("Heap contents: ");
+		while (!heap.isEmpty()) {
+			System.out.print(heap.getMax() + " ");
+			heap.removeMax();
+		}
+		System.out.println();
 	}
 }
